@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #333;
+}
+
+.player{
+    height: 500px;
+    width:100%;
+    max-width: 330px;
+    padding:20px 30px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#F5EFFF,#E5D9F2,#C8A1E0);
+}
+
+.icons{
+    width: 100%;
+}
+
+.icons i{
+    font-size:22px;
+    color:#fff;
+    background-color: rgb(185, 96, 240);
+    height:30px;
+    aspect-ratio: 1;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icons i:last-child{
+    float: right;
+}
+
+.circle{
+    min-height: 200px;
+    aspect-ratio: 1;
+    border: 5px solid #C8A1E0;
+    border-radius: 50%;
+    margin: 10px auto;
+    background-image: url('../images/alexander-shatov-qt7S2QuAhJI-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 5px 20px #b1b1b1,
+    -5px -5px 20px #b1b1b1;
+}
+
+.songname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width:200px;
+    margin: 25px 0;
+}
+
+.songname #name{
+    font-size:15px;
+    font-weight:550;
+    color: #333;
+    opacity: 0;
+    transition: all .10s ease;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+#progress-bar{
+    width: 100%;
+    margin-bottom:30px;
+    -webkit-appearance: none;
+    background-color: #9116dd;
+    outline: none;
+    border:2px solid #fff;
+    border-radius:15px;
+    height: 10px;
+}
+
+#progress-bar::-webkit-slider-thumb{
+    height: 20px;
+    aspect-ratio: 1;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background-color: #9116dd;
+}
+
+.player-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 50px; */
+}
+
+.player-icon i:nth-child(2){
+    font-size: 60px;
+    color: #9116dd;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px #b1b1b1,
+    -5px -5px 20px #b1b1b1;
+    margin: 10px 5px;
+    border: 2px solid #fff;
+}
+
+.player-icon i:first-child,
+.player-icon i:last-child{
+    color: #b15ce6;
+    font-size: 45px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:450px) {
+    .player{
+        height: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+}

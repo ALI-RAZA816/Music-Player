@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player (html css javascript)</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/fontawesome.css">
+</head>
+<body>
+    <div class="player">
+        <div class="icons">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="circle"></div>
+        <div class="songname">
+            <span id="name"></span>
+        </div>
+        <input type="range" value="0" min="0" max="100" id="progress-bar">
+        <div class="player-icon">
+            <i id="backward-btn" class="fa-solid fa-backward-step"></i>
+            <i id="playbtn" class="fa-solid fa-circle-play"></i>
+            <i id="forward-btn" class="fa-solid fa-forward-step"></i>
+        </div>
+    </div>
+    <script src="./javascript/index.js"></script>
+</body>
+</html>
